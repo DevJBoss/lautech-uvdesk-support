@@ -1,0 +1,15 @@
+# Enter customer api endpoints here ...
+uvdesk_api_bundle_api_customers_v1.0_fetch_customers:
+    path:       /customers/all
+    controller: Webkul\UVDesk\ApiBundle\API\Customers::fetchCustomers
+    methods:    [GET]
+
+uvdesk_api_bundle_api_customers_v1.fetch_customer_by_email:
+    path:       /customers/email
+    controller: Webkul\UVDesk\ApiBundle\API\Customers::fetchCustomerByEmail
+    methods:    [GET]
+
+uvdesk_api_bundle_api_customers_v1.create_customer:
+    path:       /customers/create
+    controller: Webkul\UVDesk\ApiBundle\API\Customers::registerCustomer
+    methods:    [POST]
